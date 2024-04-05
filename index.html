@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmatic Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #parent {
+        width: 100%;
+     background: #f2f2f2;
+        padding: 20px;
+      }
+      #parent h2 {
+        font-size: 25px;
+        /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        padding-top: 30px;
+        /* border: 1px solid red; */
+        text-align: center;
+      }
+      .child {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* border: 1px solid; */
+        /* padding: 10px 10px 30px 10px; */
+        /* padding: 10px; */
+        /* width: 100%; */
+        gap: 20px;
+        /* border-radius: 20px; */
+        padding-top: 20px;
+
+        /* margin-top: 20px; */
+      }
+      .child div {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding: 8px;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+      }
+      .child div img {
+        width: 100%;
+        border-radius: 10px;
+        /* padding: 10px; */
+        /* margin: 10px; */
+      }
+      .box {
+        width: 200px;
+        height: 40px;
+        border: 3px dotted red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: red;
+      }
+      .box span {
+        color: black;
+        padding-left: 10px;
+      }
+
+      /* responsive */
+      /* teblet */
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .child {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          /* background-color: red; */
+        }
+      }
+      @media screen and (min-width: 200px) and (max-width: 768px) {
+        #parent{
+            background: none;
+            text-align: center;
+        }
+        .child {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* background-color: violet; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div>
+        <h2>OFFERS</h2>
+      </div>
+      <div class="child">
+        <div>
+          <img
+            src="./assest/img/68b0c0a4-02f4-4cc0-be7c-635954106635.jpg"
+            alt=""
+          />
+          <div class="box">
+            <p>DEAL300</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assest/img/771c6c5c-4389-4aed-b77c-e15dc5884862.jpg"
+            alt=""
+          />
+          <div class="box">
+            <p>DEALS599</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assest/img/937299cf-ede2-4f96-baa1-fb36ac44a513.jpg"
+            alt=""
+          />
+          <div class="box">
+            <p>FACEPRMR</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="./assest/img/bdb4b316-8392-486a-8782-f6453f0c5540.jpg"
+            alt=""
+          /><div class="box">
+            <p>SLINGBLING999</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assest/img/c20dff62-0ac0-476a-a6bc-13a955786f09.jpg"
+            alt=""
+          /><div class="box">
+            <p>DPOWDERSS799</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assest/img/e1a394e0-9c14-45e0-999e-16ad9589b46a.jpg"
+            alt=""
+          />
+          <div class="box">
+            <p>PALETTE1299</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assest/img/e850895b-b450-4f6b-9ef7-a5ec0a14ea5d.jpg"
+            alt=""
+          />
+          <div class="box">
+            <p>WOMENSDAY</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assest/img/ffca0da4-6728-45cc-ab15-dd32302253cd.jpg"
+            alt=""
+          /><div class="box">
+            <p>CAPRESEBAG</p>
+            <span class="material-symbols-outlined"> content_copy </span>
+          </div>
+        </div>
+        <div>
+            <img
+              src="./assest/img/68b0c0a4-02f4-4cc0-be7c-635954106635.jpg"
+              alt=""
+            />
+            <div class="box">
+              <p>DEAL300</p>
+              <span class="material-symbols-outlined"> content_copy </span>
+            </div>
+          </div> <div>
+            <img
+              src="./assest/img/68b0c0a4-02f4-4cc0-be7c-635954106635.jpg"
+              alt=""
+            />
+            <div class="box">
+              <p>DEAL300</p>
+              <span class="material-symbols-outlined"> content_copy </span>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
